@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cargando...</title>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #000; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <img id="foto-azar" src="">
+
+    <script>
+        // EDITAR AQUÍ: Pon los nombres de tus fotos entre comillas
+        var misFotos = ["1.jpg", "2.jpg", "3.jpg"]; 
+        
+        // Esto elige una al azar
+        var elegida = misFotos[Math.floor(Math.random() * misFotos.length)];
+        
+        // Esto la muestra en pantalla
+        document.getElementById("foto-azar").src = elegida;
+    </script>
+</body>
+</html>
